@@ -1,0 +1,15 @@
+endpoint:
+  url: http://httpbin.org
+
+spring:
+  application:
+    name: learning
+  config:
+    import: optional:configserver:http://localhost:8888
+    cloud:
+      config:
+        fail-fast: true
+
+limits-service:
+  minimum: 1
+  maximum: 100

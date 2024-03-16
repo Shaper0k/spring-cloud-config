@@ -1,0 +1,7 @@
+logger:
+  name: ${rootProject.name}
+  version: ${version}
+  type: microservices
+  tags: template, service
+  zone: localhost
+  level: DEBUG
